@@ -4,8 +4,9 @@ cache:
   bundler: true
   directories:
     - vendor/bundle
-addons:
-  postgresql: "9.3"
+services:
+        - mysql
+        - postgresql
 rvm:
   - 2.7
   - 2.5
