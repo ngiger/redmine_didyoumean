@@ -7,21 +7,16 @@ cache:
 addons:
   postgresql: "9.3"
 rvm:
+  - 2.7
+  - 2.5
   - 2.1
   - 2.0
   - 1.9
 env:
-  - REDMINE_VERSION=2.4.7 VERBOSE=no DB=mysql
-  - REDMINE_VERSION=2.5.3 VERBOSE=no DB=mysql
   - REDMINE_VERSION=2.6.0 VERBOSE=no DB=mysql
+  - REDMINE_VERSION=4.1.0 VERBOSE=no DB=mysql
   - REDMINE_VERSION=master VERBOSE=no DB=mysql
-  - REDMINE_VERSION=2.4.7 VERBOSE=no DB=postgres
-  - REDMINE_VERSION=2.5.3 VERBOSE=no DB=postgres
-  - REDMINE_VERSION=2.6.0 VERBOSE=no DB=postgres
-  - REDMINE_VERSION=master VERBOSE=no DB=postgres
-  - REDMINE_VERSION=2.4.7 VERBOSE=no DB=sqlite
-  - REDMINE_VERSION=2.5.3 VERBOSE=no DB=sqlite
-  - REDMINE_VERSION=2.6.0 VERBOSE=no DB=sqlite
+  - REDMINE_VERSION=4.1.0 VERBOSE=no DB=sqlite
   - REDMINE_VERSION=master VERBOSE=no DB=sqlite
 script:
   - export PLUGIN=redmine_didyoumean
